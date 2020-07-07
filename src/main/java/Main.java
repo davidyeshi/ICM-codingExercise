@@ -9,12 +9,12 @@ public class Main {
     static Map<String, CardValue> cardValueMap = new HashMap<>();
 
     public static void main(String[] args) {
-        System.out.println("\t\tPOKER HAND SORTER");
+        System.out.println("\tPOKER HAND SORTER");
         System.out.println("----------------------------------");
         loadMap(cardValueMap);
 
         try {
-            File myFile = new File("src/main/java/poker-hands.txt");
+            File myFile = new File(args[0]);
             Scanner myReader = new Scanner(myFile);
 
             // Initialize players
@@ -98,8 +98,8 @@ public class Main {
             }
 
             // Outputting the wins
-            System.out.println("\t\tPlayer 1: " + player1.wins + " hands.");
-            System.out.println("\t\tPlayer 2: " + player2.wins + " hands.");
+            System.out.println("\tPlayer 1: " + player1.wins + " hands.");
+            System.out.println("\tPlayer 2: " + player2.wins + " hands.");
 
         }
         catch (FileNotFoundException ex) {
