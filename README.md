@@ -10,3 +10,6 @@
 Or
 
 - $ java -jar codingExercise.jar home/user/../poker-hands.txt
+
+
+JAVA_VERSION = 11
